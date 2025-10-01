@@ -1,0 +1,201 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Cabeçalho */
+header {
+  background: #c4170c;
+  color: white;
+}
+
+.top-bar {
+  background: #eee;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+.top-bar a {
+  color: #c4170c;
+  font-weight: bold;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Conteúdo */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Notícias principais */
+.highlight img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.highlight h1 {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #c4170c;
+}
+
+.highlight p {
+  color: #555;
+}
+
+/* Notícias secundárias */
+.secondary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.secondary img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.secondary h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Boxes */
+.sidebar-box {
+  background: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.sidebar-box h3 {
+  margin-bottom: 10px;
+  color: #c4170c;
+}
+
+.sidebar-box ol {
+  padding-left: 20px;
+}
+
+.sidebar-box ol li {
+  margin-bottom: 8px;
+}
+
+/* Artigo completo */
+.full-article {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.full-article h1 {
+  color: #c4170c;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.full-article .subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.full-article img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Anúncios */
+.ad {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ad img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* Cookies */
+.cookies-bar {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookies-bar button {
+  background: #c4170c;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cookies-bar button:hover {
+  background: #a3120a;
+}
+
+/* Rodapé */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
