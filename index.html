@@ -3,68 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jornal Agora</title>
+  <title>Meu Jornal</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <script src="js/data.js"></script>
-<script src="js/main.js"></script>
 
-  <!-- Cabeçalho -->
-  <header>
-    <div class="top-bar">
-      <a href="#">globo.com</a> | 
-      <a href="#">ge</a> | 
-      <a href="#">gshow</a> | 
-      <a href="#">globoplay</a>
-    </div>
-    <div class="main-header">
-      <div class="logo">Jornal Agora</div>
-      <nav>
-        <ul>
-          <li><a href="#">Brasil</a></li>
-          <li><a href="#">Mundo</a></li>
-          <li><a href="#">Economia</a></li>
-          <li><a href="#">Política</a></li>
-          <li><a href="#">Esportes</a></li>
-          <li><a href="#">Tecnologia</a></li>
-        </ul>
-      </nav>
+  <!-- 🔴 Cabeçalho -->
+  <header class="topbar">
+    <div class="logo">MeuJornal</div>
+    <nav class="menu">
+      <a href="#">Brasil</a>
+      <a href="#">Mundo</a>
+      <a href="#">Política</a>
+      <a href="#">Economia</a>
+      <a href="#">Tecnologia</a>
+      <a href="#">Esportes</a>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Buscar...">
     </div>
   </header>
 
-  <!-- Banner topo -->
-  <div class="ad ad-top">
-    <img src="https://via.placeholder.com/970x250?text=Publicidade+Topo" alt="Publicidade topo">
-  </div>
+  <!-- 📢 Anúncio topo -->
+  <section class="ads">
+    <img src="https://via.placeholder.com/900x150/ff0000/ffffff?text=Anuncio+Topo" alt="Anúncio">
+  </section>
 
-  <!-- Conteúdo -->
-  <main class="container">
-    <!-- Notícia principal -->
-    <section class="highlight">
-      <a href="article.html">
-        <img src="https://picsum.photos/900/400" alt="">
-        <h1>Inteligência Artificial promete revolucionar a medicina</h1>
-      </a>
-      <p>Novas pesquisas mostram como algoritmos podem acelerar diagnósticos e salvar vidas.</p>
+  <!-- 📰 Notícia principal -->
+  <main class="content">
+    <section class="highlight"></section>
+
+    <!-- Notícias menores -->
+    <section class="secondary"></section>
+
+    <!-- 📢 Anúncio no meio -->
+    <section class="ads">
+      <img src="https://via.placeholder.com/900x200/00ff00/000000?text=Anuncio+Meio" alt="Anúncio">
     </section>
-<br>
+  </main>
 
-  <div class="ad ad-top">
-    <img src="https://via.placeholder.com/970x250?text=Publicidade+Topo" alt="Publicidade topo">
+  <!-- 📢 Anúncio final -->
+  <section class="ads">
+    <img src="https://via.placeholder.com/900x200/0000ff/ffffff?text=Anuncio+Fim" alt="Anúncio">
+  </section>
+
+  <!-- 🍪 Cookies -->
+  <div class="cookies">
+    Este site utiliza cookies para melhorar sua experiência.
+    <button onclick="this.parentElement.style.display='none'">Prosseguir</button>
   </div>
-  <br>
 
-    <!-- Notícias secundárias -->
-    <section class="secondary">
-      <article>
-        <a href="article.html"><img src="https://picsum.photos/300/200" alt=""></a>
-        <h2><a href="article.html">Mercado de carros elétricos dispara em 2025</a></h2>
-      </article>
-      <article>
-        <a href="article.html"><img src="https://picsum.photos/301/200" alt=""></a>
-        <h2><a href="article.html">Novas regras de imigração entram em vigor</a></h2>
-      </article>
-      <article>
-        <a href="article.html"><img src="https://picsum.photos/302/200" alt=""></a>
-        <h2><a href="article.html">Startup brasileira é destaque mundial em inovação
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
